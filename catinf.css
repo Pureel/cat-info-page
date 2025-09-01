@@ -1,0 +1,83 @@
+*, 
+*::before, 
+*::after {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+html{
+  font-size: 20px;
+}
+body{
+  padding: 12px;
+  margin: 0px;
+  background-color: #F7F6F2;
+  background-image: url(catbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+nav{
+  width: 100%;
+}
+nav ul{
+  padding: 6px;
+}
+nav header{
+  text-align: center;
+}
+nav li{
+  list-style: none;
+  height: 35px;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+nav li:first-of-type{
+  border-top: 1px solid black;
+}
+nav a:visited{
+  color: purple;
+}
+nav a:hover{
+  color: blue;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+main header{
+  margin-bottom: -15px;
+}
+#Fun_Facts li{
+  list-style: square;
+}
+@media(min-width:600px){
+   body{
+     display: flex;
+     margin: 0;
+   }
+   main{
+     flex: 1;
+     padding: 10px;
+     border-left: 2px solid black;
+   }
+   nav{
+     width: 35%;
+     height: max-content;
+     overflow: auto;
+   }
+   nav ul{
+     min-width: max-content;
+     max-width: 100%;
+   }
+}
+
+@media(max-width: 599px){
+  nav{
+    height: 300px;
+    overflow: auto;
+    border: 1px dashed black;
+  }
+  nav ul{
+    padding-bottom: 3px;
+    margin-bottom: 0px;
+  }
+}
